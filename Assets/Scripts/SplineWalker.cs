@@ -16,9 +16,9 @@ public class SplineWalker : MonoBehaviour {
         progress += Time.deltaTime / duration;
         if (progress > 1f)
         {
-            progress = 1f;
+            //progress = 1f;
         }
-        //transform.localPosition = spline.getPositions()[(int)progress];
+        transform.localPosition = spline.getPositions()[(int)progress];
         Debug.Log("Progress: " + progress);
         //Debug.Log("Line Points: " + spline.getPositions()[0]);
     }
