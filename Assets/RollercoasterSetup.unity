@@ -2961,10 +2961,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spline: {fileID: 2129026236}
-  frequency: 8000
+  frequency: 7000
   lookForward: 1
   items:
-  - {fileID: 4949065349401694, guid: 92f50b665e99baa408687c3676a2c7b4, type: 2}
+  - {fileID: 4996043984539844, guid: cb876f3c7a1bbf64fbbb5c48938b1072, type: 2}
 --- !u!4 &1974822265
 Transform:
   m_ObjectHideFlags: 0
