@@ -8,6 +8,7 @@ public class SpawnAsteroid : MonoBehaviour {
     public Vector3 center;
     public Vector3 size;
     public float period = 0.0f;
+    public int asteroidAmount;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +19,11 @@ public class SpawnAsteroid : MonoBehaviour {
 	void Update () {
         if (period > 2.0f) {
             //Do Stuff
-            SpawnIt();
+            for (int i = 0; i < asteroidAmount; i++)
+            {
+                SpawnIt();
+            }
+           
             period = 0;
         }
         period += UnityEngine.Time.deltaTime;
