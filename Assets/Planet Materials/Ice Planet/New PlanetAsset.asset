@@ -15,7 +15,7 @@ MonoBehaviour:
   seedLand: 170678650
   seedLandColour01: 1528887083
   seedLandColour23: 3282624
-  seedCity: 1541473199
+  seedCity: 1873499849
   seedCloud: 862877218
   surfaceNoise:
     scale: 0.9
@@ -37,10 +37,10 @@ MonoBehaviour:
     smearOctaves: 1
     smearFalloff: 1.04
     smearIntensity: 1.61
-  landColour0: {r: 0.59607846, g: 0.41960785, b: 0.2784314, a: 1}
-  landColour1: {r: 0.27058825, g: 0.16862746, b: 0.08627451, a: 1}
-  landColour2: {r: 0, g: 0.078431375, b: 0, a: 1}
-  landColour3: {r: 0.043137256, g: 0.2509804, b: 0.043137256, a: 1}
+  landColour0: {r: 0.0068122903, g: 0.9264706, b: 0.9264706, a: 1}
+  landColour1: {r: 0, g: 0.71034503, b: 1, a: 1}
+  landColour2: {r: 0, g: 0.25517225, b: 1, a: 1}
+  landColour3: {r: 0, g: 0.6689658, b: 1, a: 1}
   landColourNoise01:
     scale: 0.49
     octaves: 9
@@ -61,8 +61,8 @@ MonoBehaviour:
     smearOctaves: 1
     smearFalloff: 9.53
     smearIntensity: 15.73
-  waterColour0: {r: 0.011764706, g: 0.011764706, b: 0.20392157, a: 1}
-  waterColour1: {r: 0, g: 0, b: 0.34509805, a: 1}
+  waterColour0: {r: 0, g: 0, b: 0.97794116, a: 1}
+  waterColour1: {r: 0, g: 0.5793102, b: 1, a: 1}
   waterLevel: 0.5
   waterSpecular: 1
   waterFalloff: 3.1
@@ -74,10 +74,10 @@ MonoBehaviour:
   cityReach: 0.8
   cityHeight: 0.8
   cityColour: {r: 0.14509805, g: 0.105882354, b: 0.06666667, a: 1}
-  cityCount: 128
-  cityMultiplier: 6
-  cityDropoff: 4
-  cityDepth: 4
+  cityCount: 161
+  cityMultiplier: 5
+  cityDropoff: 6
+  cityDepth: 5
   citySpread: 0.45
   cityIntensity: 64
   maxCityIntensity: 7.5
@@ -93,11 +93,11 @@ MonoBehaviour:
     smearOctaves: 3
     smearFalloff: 4.2
     smearIntensity: 5.15
-  cloudWorleyNoiseOctaves: 1
-  cloudWorleyNoiseFrequency: 6
+  cloudWorleyNoiseOctaves: 4
+  cloudWorleyNoiseFrequency: 36.1
   cloudWorleyNoiseAmplitude: 0.5
-  cloudShadowRange: 10
-  cloudShadowStrength: 0.1
+  cloudShadowRange: 26.9
+  cloudShadowStrength: 0.413
   cloudColour0: {r: 1, g: 1, b: 1, a: 1}
   cloudColour1: {r: 0, g: 0, b: 0, a: 0}
   cloudSpin: 1
