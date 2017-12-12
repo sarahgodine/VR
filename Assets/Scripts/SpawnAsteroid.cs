@@ -9,6 +9,7 @@ public class SpawnAsteroid : MonoBehaviour {
     public Vector3 size;
     public float period = 0.0f;
     public int asteroidAmount;
+    public float spawnperiod;
 
 	// Use this for initialization
 	void Start () {
@@ -17,7 +18,7 @@ public class SpawnAsteroid : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (period > 2.0f) {
+        if (period > spawnperiod) {
             //Do Stuff
             for (int i = 0; i < asteroidAmount; i++)
             {
@@ -34,9 +35,12 @@ public class SpawnAsteroid : MonoBehaviour {
         GameObject obj = (GameObject)Instantiate(AsteroidPrefab, pos, Quaternion.identity);
         obj.GetComponent<Rigidbody>().velocity = new Vector3(Random.Range(-100, 100), Random.Range(-100, 100), Random.Range(-100, 100));
         obj.GetComponent<Rigidbody>().angularVelocity = new Vector3(Random.Range(-100, 100), Random.Range(-100, 100), Random.Range(-100, 100));
+        float scale = Random.Range(1.0f, 10.0f);
+        obj.transform.localScale = new Vector3(scale, scale, scale);
     }
 
     void OnDrawGizmosSelected() {
-        Gizmos.color = new Color(1, 0, 0, 0.5f);
+        Gizmos.color = new Color(1.0f, 0, 0, 1.0f);
+        Gizmos.DrawCube(center, size);
     }
 }
